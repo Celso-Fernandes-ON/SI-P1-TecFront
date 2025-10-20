@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    background-color: #1e1f35;
+    color: #fff;
+    font-size: 1.6rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 12rem;
+}
+h1{
+    font-size: 4rem;
+}
+nav{
+    margin-left: auto;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: aliceblue;
+}
+a:hover{
+    color: rgb(196, 212, 228);
+}
+footer a{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    img{
+        width: 2.8rem;
+    }
+}
