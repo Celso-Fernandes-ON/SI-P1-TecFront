@@ -1,6 +1,5 @@
 @import url(./projects.css);
 @import url(./contatos.css);
-@import url(./projects.css);
 *{
     margin: 0;
     padding: 0;
@@ -8,10 +7,18 @@
 }
 :root{
     font-size: 62.5%;
+    --bg-card :#363B40;
+    --input-base: #1C1F21;
+    --bg-color: #131516;
+    --shape-body: #212427;
+    --border: #869198;
+    --gray-400: #292C34;
+    --bg-nav: #0D0E11;
+    
 }
 body{
     color: white;
-    background-color: rgb(55, 24, 24);
+    background-color: var(--bg-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 ul{
@@ -21,10 +28,18 @@ ul{
     align-items: center;
     padding: 16px;
 }
+nav, footer{
+    background-color: var(--bg-nav);
+}
 .container{
     display: flex;
     flex-direction: column;
     padding-inline: 12rem;
+}
+.titulo{
+    font-size: 4rem;
+    text-align: center;
+    color: #E3646E;
 }
 a{
     color: white;

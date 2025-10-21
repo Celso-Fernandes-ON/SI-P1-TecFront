@@ -1,7 +1,40 @@
 main{
-    
 }
-.projets{
-    display: flex;
+header{
+    margin-block: 4rem 6rem;
+}
+.projects{
+    padding-inline: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: max-content;
+    gap: 2rem;
+}
+.card-project{
+    border-radius: .8rem;
+    background-color: var(--bg-card);
+    padding: 1.2rem;
+    max-width: 50rem;
+    height: 30rem;
+    border: 2px solid transparent;
+    outline: var(--border) 1px;
+    img{
+        border-radius: .5rem;
+        margin-bottom: 1.4rem;
+        width: 100%;
+    }
+    &:hover{
+        border: 2px solid var(--border);
 
+    }
+}
+.card-text{
+    display: grid;
+    gap: .5rem;
+    span{
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
 }
