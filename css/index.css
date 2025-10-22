@@ -14,12 +14,27 @@
     --border: #869198;
     --gray-400: #292C34;
     --bg-nav: #0D0E11;
-    
+    --fx-color: #E3646E;
+    --title-md: 2.4rem/1.2 bold var(--font-Asap);
+    --title-md: 1.6rem/1.2 bold var(--font-Asap);
+    --font-Asap: "Asap", sans-serif;
+    --font-Maven: "Maven Pro", sans-serif;
 }
 body{
     color: white;
     background-color: var(--bg-color);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+
+    height: 100vh;
+}
+main{
+    padding: 0 12rem 8rem;
+}
+h3{
+    font: var(--title-md);
+    font-size: 2.4rem;
+    margin-block: 2.4rem 1.2rem;
 }
 ul{
     display: flex;
@@ -31,14 +46,12 @@ ul{
 nav, footer{
     background-color: var(--bg-nav);
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    padding-inline: 12rem;
+nav{
+    font-size: 1.8rem;
+    padding-inline: 8rem;
 }
 .titulo{
     font-size: 4rem;
-    text-align: center;
     color: #E3646E;
 }
 a{
@@ -55,20 +68,65 @@ header img{
     text-align: center;
 }
 footer {
-    img{
+    bottom: 0;
+    display: grid;
+    gap: 2rem;
+    padding-block: 8rem 12rem;
 
-    }
-    a{
-        margin: 20px;
-        text-align: center;
-    }
     p{
         margin-top: 2px;
     }
 }
-.container{
-    padding: 0px 50px;
+.social-links{
+    align-items: center;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    display: flex;
+    background-color:var(--gray-400);
+    width: 40rem;
+    margin-inline: auto;
+    p{
+        margin-left: 1.2rem;
+    }
+    span{
+        width: 3rem;
+        height: 3rem;
+    }
+    &:hover{
+        border: 2px solid var(--fx-color);
+    }
 }
-nav a:hover{
-    color: green;
+a:hover{
+    color: var(--fx-color);
+}
+#github-logo{
+    span{
+        background-image: url(../img/icons/github-logo.svg);
+    }
+    &:hover{
+        span{
+            background-image: url(../img/icons/github-logo-hover.svg);
+        }
+    }
+}
+#linkedin-logo{
+    span{
+        background-image: url(../img/icons/linkedin-logo.svg);
+    }
+    &:hover{
+        span{
+            background-image: url(../img/icons/linkedin-logo-hover.svg);
+        }
+    }
+}
+#youtube-logo{
+    span{
+        background-image: url(../img/icons/youtube-logo.svg);
+    }   
+    &:hover{
+        span{
+            background-image: url(../img/icons/youtube-logo-hover.svg);
+        }
+    }
 }
